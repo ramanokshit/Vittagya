@@ -88,3 +88,32 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 });
+
+document.getElementById('minimize-icon').addEventListener('click', function() {
+    const chatbotContainer = document.getElementById('chatbotContainer');
+    const chatbotMessages = document.getElementById('chatbotMessages');
+    const chatbotInputContainer = document.getElementById('chatbotInputContainer');
+
+    if (chatbotContainer.classList.contains('minimized')) {
+        // If minimized, show messages and input
+        chatbotContainer.classList.remove('minimized');
+        chatbotMessages.style.display = 'block';
+        chatbotInputContainer.style.display = 'block';
+        this.textContent = '−'; // Change icon to minus
+    } else {
+        // If not minimized, hide messages and input
+        chatbotContainer.classList.add('minimized');
+        chatbotMessages.style.display = 'none';
+        chatbotInputContainer.style.display = 'none';
+        this.textContent = '+'; // Change icon to plus
+    }
+});
+
+document.getElementById('open-window').addEventListener('click', () => {
+    const width = window.screen.width * 0.75; // 75% of screen width
+    const height = window.screen.height * 0.75; // 75% of screen height
+    const left = (window.screen.width - width) / 2; // Center the window
+    const top = (window.screen.height - height) / 2; // Center the window
+
+    window.open('your-page.html', 'New Window', `width=${width},height=${height},top=${top},left=${left}`);
+});
