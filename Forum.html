@@ -53,12 +53,15 @@
         </div>
     </main>
 
-    <div class="chatbot-container">
-        <div class="bg-blue-600 text-white p-4">
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="bg-blue-600 text-white p-4 flex justify-between items-center">
             <h2 class="text-lg font-semibold">Chatbot</h2>
+            <span id="minimize-icon" style="cursor: pointer;">−</span>
         </div>
-        <div id="chatbotMessages" class="chatbot-messages"></div>
-        <div class="chatbot-input">
+        <div id="chatbotMessages" class="chatbot-messages">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div id="chatbotInputContainer" class="chatbot-input">
             <div class="flex space-x-2">
                 <input type="text" id="chatbotInput" class="flex-grow p-2 border border-gray-300 rounded bg-white text-gray-900" placeholder="Type your message...">
                 <button onclick="sendMessage()" class="bg-blue-500 text-white px-4 py-2 rounded">Send</button>
