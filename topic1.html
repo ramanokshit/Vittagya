@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 1 - Vittagya</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Vittagya</h1>
+            <div class="flex items-center space-x-4">
+                <select id="languageSelect" class="bg-white text-black p-2 rounded">
+                    <option value="en">English</option>
+                    <option value="es">Assamese</option>
+                    <option value="fr">Bengali</option>
+                    <option value="fr">Bodo</option>
+                    <option value="fr">Dogiri</option>
+                    <option value="fr">Gujarati</option>
+                    <option value="fr">Hindi</option>
+                    <option value="fr">Kannada</option>
+                    <option value="fr">Kashmiri</option>
+                    <option value="fr">Konkani</option>
+                    <option value="fr">Maithili</option>
+                    <option value="fr">Malayalam</option>
+                    <option value="fr">Marathi</option>
+                    <option value="fr">Meitei</option>
+                    <option value="fr">Nepali</option>
+                    <option value="fr">Odia</option>
+                    <option value="fr">Punjabi</option>
+                    <option value="fr">Santali</option>
+                    <option value="fr">Sindhi</option>
+                    <option value="fr">Tamil</option>
+                    <option value="fr">Telugu</option>
+                    <option value="fr">Urdu</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+        <div class="flex flex-col items-center justify-center min-h-screen space-y-8">
+            <h1 class="text-3xl font-bold mb-8 text-gray-900">Topic 1: Budgeting Basics</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-6xl">
+                <button class="btn w-full" onclick="navigateTo('topic1/1.html')">Creating a Budget</button>
+                <button class="btn w-full" onclick="navigateTo('topic1/2.html')">Tracking Expenses</button>
+                <button class="btn w-full" onclick="navigateTo('topic1/3.html')">Setting Financial Goals</button>
+                <button class="btn w-full" onclick="navigateTo('topic1/4.html')">Reducing Debt</button>
+                <button class="btn w-full" onclick="navigateTo('topic1/5.html')">Saving Strategies</button>
+                <button class="btn w-full" onclick="navigateTo('topic1/6.html')">Emergency Funds</button>
+                <button class="btn w-full" onclick="navigateTo('topic1/7.html')">Budgeting Tools</button>
+                <button class="btn w-full" onclick="navigateTo('topic1/8.html')">Adjusting Your Budget</button>
+                <button class="btn w-full" onclick="navigateTo('topic1/9.html')">Budgeting for Special Events</button>
+                <button class="btn w-full" onclick="navigateTo('topic1/10.html')">Long-term Financial Planning</button>
+            </div>
+            <button class="btn w-full max-w-2xl mt-12" onclick="navigateTo('index.html')">Back to Home</button>
+        </div>
+    </main>
+
+    <div class="chatbot-container">
+        <div class="bg-blue-600 text-white p-4">
+            <h2 class="text-lg font-semibold">Chatbot</h2>
+        </div>
+        <div id="chatbotMessages" class="chatbot-messages"></div>
+        <div class="chatbot-input">
+            <div class="flex space-x-2">
+                <input type="text" id="chatbotInput" class="flex-grow p-2 border border-gray-300 rounded bg-white text-gray-900" placeholder="Type your message...">
+                <button onclick="sendMessage()" class="bg-blue-500 text-white px-4 py-2 rounded">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
