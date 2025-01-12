@@ -16,13 +16,21 @@
             margin: auto;
             overflow: hidden;
         }
-        header, footer {
-            background: #f4f4f4;
+        header{
+            background: #007BFF;
             padding: 1rem;
             text-align: center;
+
+            
         }
+        footer {
+            background: #f4f4f4;
+            padding: 1rem;
+            text-align: center;}
+
         .team-section {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
             flex-wrap: wrap;
             justify-content: space-around;
         }
@@ -44,39 +52,37 @@
 
     <main class="container">
         <section id="app-info">
-            <h2>Our Application</h2>
-            <p>Our app is designed to revolutionize the way people interact with technology. We've created an intuitive, user-friendly platform that simplifies complex tasks and enhances productivity.</p>
+            <h2>Mission and Vision</h2>
+            <p>Welcome to Vittagya: The Financial Advisor Platform, an initiative by Team SAVN to empower rural women with personalized financial tools, education, and resources. Our platform is a beacon of financial independence, combining cutting-edge technology with an intuitive design to simplify money management and promote entrepreneurial growth.
+
+                Our mission is to bridge the gap in financial literacy for women in underserved communities by providing an accessible, multilingual platform. We aim to equip users with the knowledge and tools necessary to make informed financial decisions, improve their quality of life, and inspire a culture of confidence, collaboration, and entrepreneurship.
+                Together, Team SAVN from Vellore Institute of Technology, Vellore, is dedicated to creating a platform that transforms financial challenges into opportunities, paving the way for a brighter and more secure future for rural women.</p>
         </section>
 
         <section id="team-info">
             <h2>Our Team</h2>
             <div class="team-section">
                 <div class="team-member">
-                    <h3>John Doe</h3>
-                    <p>Co-founder & CEO</p>
-                    <p>John brings 15 years of tech industry experience to our team. His vision drives our innovation.</p>
+                    <h3>Ansh Sharma</h3>
+                    <p>AI Innovator and Team Lead</p>
+                    <p>Ansh leads the team with expertise in Artificial Intelligence, focusing on integrating advanced AI technologies like reinforcement learning and diffusion models to deliver personalized, intelligent solutions tailored to diverse user needs.</p>
                 </div>
                 <div class="team-member">
-                    <h3>Jane Smith</h3>
-                    <p>Co-founder & CTO</p>
-                    <p>Jane's expertise in AI and machine learning is the backbone of our app's intelligent features.</p>
+                    <h3>Nokshit Rama Yaseswi</h3>
+                    <p>Web Development Specialist</p>
+                    <p>Nokshit is the backbone of the platform’s development, ensuring a seamless and responsive website experience for users. Their expertise in web development guarantees that Vittagya is both accessible and scalable.</p>
                 </div>
                 <div class="team-member">
-                    <h3>Mike Johnson</h3>
-                    <p>Lead Developer</p>
-                    <p>Mike's passion for clean, efficient code ensures our app runs smoothly and securely.</p>
+                    <h3>Shivam Pasi</h3>
+                    <p>UX Developer</p>
+                    <p>Shivam enhances user engagement by crafting a user experience that resonates with the needs of rural women. Their emphasis on empathy-driven design ensures accessibility and inclusivity for all literacy levels and languages.</p>
                 </div>
                 <div class="team-member">
-                    <h3>Sarah Lee</h3>
-                    <p>UX Designer</p>
-                    <p>Sarah's keen eye for design creates the seamless, enjoyable user experience our app is known for.</p>
+                    <h3>Vineet Arora</h3>
+                    <p>UI Designer</p>
+                    <p>Vineet brings creative flair to the team by designing user interfaces that are both visually appealing and user-friendly. Their focus on intuitive navigation ensures that users can interact with the platform effortlessly.</p>
                 </div>
             </div>
-        </section>
-
-        <section id="mission">
-            <h2>Our Mission</h2>
-            <p>At our core, we believe in harnessing the power of technology to improve people's lives. Our mission is to create innovative solutions that make complex tasks simple, increase productivity, and foster a more connected world. We're committed to continuous improvement, always listening to our users and evolving our app to meet their needs.</p>
         </section>
         
     </main>
